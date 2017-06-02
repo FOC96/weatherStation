@@ -1,12 +1,18 @@
-function hola() {
-    alert('hola');
-}
-
-$('#mainInfo').hover(
-    function() {
-        $(this).parallaxify(args);
-    },
-    function(){
-        $(this).parallaxify('destroy');
+function checkTime() {
+    hour = new Date().getHours()
+    
+    if (hour<12) {
+        changeBack('morning', 'afternoon', 'night')
+    } else if (hour>11 && hour<8) {
+        changeBack('afternoon', 'morning', 'night')
+    } else {
+        changeBack('night', 'afternoon', 'morning')
     }
-)
+}
+            
+
+function changeBack(classOn, classOff, classOff2) {
+    document.getElementById('backBody').classList.remove(classOff);
+    document.getElementById('backBody').classList.remove(classOff2);
+    document.getElementById('backBody').classList.add(classOn);
+}

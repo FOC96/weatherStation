@@ -29,17 +29,29 @@ body {
     background: white;
 }
 
-.sunnyDay {
-    /* Rectangle: */
-    background-image: linear-gradient(-180deg, #01D5F7 0%, #1970CE 100%);
-    border-radius: 10px;
+/* BACKGROUNDS */
+.morning {
+    background-image: -webkit-linear-gradient(#414E9C 0%, #5A9AC7 100%);
+    background-image: -o-linear-gradient(#414E9C 0%, #5A9AC7 100%);
+    background-image: linear-gradient(#414E9C 0%, #5A9AC7 100%);
+}
+
+.afternoon {
+    background-image: -webkit-linear-gradient(#006AB9 0%, #059BB9 100%);
+    background-image: -o-linear-gradient(#006AB9 0%, #059BB9 100%);
+    background-image: linear-gradient(#006AB9 0%, #059BB9 100%);
+}
+
+.night {
+    background-image: -webkit-linear-gradient(#004377 0%, #22002F 100%);
+    background-image: -o-linear-gradient(#004377 0%, #22002F 100%);
+    background-image: linear-gradient(#004377 0%, #22002F 100%);
 }
 
 .underDiv {
     width: calc(100% - 2px);
     left: 1px;
-    min-height: 50px;
-    height: 12%;
+    height: 60px;
     background: white;
     border-radius: 0px 0px 12px 12px;
     position: absolute;
@@ -87,7 +99,7 @@ body {
     top: 20px;
 }
 
-#temperature {
+#tempC {
     font-weight: 700;
     font-size: 5em;
     color: #FFFFFF;
@@ -101,7 +113,7 @@ body {
 #building {
     width: calc(100% - 2px);
     position: absolute;
-    bottom: calc(12% - 4px);
+    bottom: 60px;
     left: 1px;
 }
 
