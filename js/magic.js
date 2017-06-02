@@ -8,13 +8,15 @@ function checkTime() {
     } else {
         changeBack('night', 'afternoon', 'morning')
     }
+    
+    $('#mainInfo').parallaxify();
 }
             
 
 function changeBack(classOn, classOff, classOff2) {
-    document.getElementById('backBody').classList.remove(classOff);
-    document.getElementById('backBody').classList.remove(classOff2);
-    document.getElementById('backBody').classList.add(classOn);
+    document.getElementById('frontBody').classList.remove(classOff);
+    document.getElementById('frontBody').classList.remove(classOff2);
+    document.getElementById('frontBody').classList.add(classOn);
 }
 
 

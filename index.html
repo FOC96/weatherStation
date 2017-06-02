@@ -11,12 +11,12 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="white">
     </head>
     <body onload="checkTime()">
-        <div class="normalBack" id="backBody">
+        <div class="normalBack" id="frontBody">
            
            <h2 id="place">Facultad de Informática</h2>
            <h3 id="lastUpdate">2 | JUNIO | 2017 | 14:03</h3>
            
-           <div class="centeredText" id="mainInfo" data-parallaxify-background-range="100">
+           <div class="centeredText" id="mainInfo" data-parallaxify-background-range="200">
                <h1 id="tempC">20ºC</h1>
                <h3 id="tempF">68ºF</h3>
                <h3 id="humidity">Humedad: 52%</h3>
@@ -24,9 +24,23 @@
            </div>
            
            <img src="media/FIF.png" id="building">
-            <div class="underDiv">
-                <img src="media/update.png" id="reloadBtn" onclick="hola()">
+            <div class="underDiv centeredText">
+<!--                <img src="media/update.png" id="reloadBtn" onclick="hola()">-->
+                <p>Fernando Ortiz Rico Celio</p>
+                <p>Diego Pastor Calvo</p>
+                <p>Abraham Wieslaw Porter Mastache</p>
             </div>
+        </div>
+        <div id="backBody" class="centeredText">
+            <p>Universidad Autónoma de Querétaro</p>
+            <p>Facultad de Informática</p>
+            
+            <p>Fernando Ortiz Rico Celio</p>
+            <p>Diego Pastor Calvo</p>
+            <p>Abraham Wieslaw Porter Mastache</p>
+            
+            <p>Dispositivos Lógicos</p>
+            <p>Dra. Ana Marcela Herrera Navarro</p>
         </div>
     </body>
 </html>
