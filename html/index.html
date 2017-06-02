@@ -7,16 +7,16 @@
         <script type="text/javascript" src="../js/magic.js"></script>
         <link rel="stylesheet" href="../parallaxify-master/jquery.parallaxify.min.js">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-touch-fullscreen" content="yes">
+<!--        <meta name="apple-mobile-web-app-status-bar-style" content="white">-->
     </head>
-    <body>
+    <body onload="windowLoaded()">
         <div class="normalBack sunnyDay" id="backBody">
-           <img src="../media/update.png" id="reloadBtn" onclick="hola()">
            
-           <h2>Facultad de Informática</h2>
+           <h2 id="place">Facultad de Informática</h2>
            <h3 id="lastUpdate">Última actualización: 22/Junio/2017 14:35</h3>
            
-           <div class="centeredText">
+           <div class="centeredText" id="mainInfo" data-parallaxify-background-range="100">
                <h1 id="temperature">20ºC</h1>
                <h3>Humedad: 52%</h3>
                <h3>Viento: 5 k/h</h3>
@@ -25,7 +25,7 @@
            
            <img src="../media/FIF.png" id="building">
             <div class="underDiv">
-                
+                <img src="../media/update.png" id="reloadBtn" onclick="hola()">
             </div>
         </div>
     </body>

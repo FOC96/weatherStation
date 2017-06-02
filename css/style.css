@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900');
+
 * {
     padding: 0px;
     margin: 0px;
     font-family: --apple-system, 'Muli', 'Roboto';
+    -webkit-touch-callout: none;
 }
 
 body {
     background: black;
+    position: fixed;
+    height: 100%;
+    width: 100%;
 }
 
 #backBody {
@@ -49,7 +55,7 @@ body {
     width: 100%;
     float: left;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 #lastUpdate {
