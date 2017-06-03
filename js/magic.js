@@ -1,3 +1,4 @@
+// Checks time (hour) to change the background color
 function checkTime() {
     hour = new Date().getHours()
     
@@ -9,14 +10,12 @@ function checkTime() {
         changeBack('night', 'afternoon', 'morning')
     }
     
-    $('#mainInfo').parallaxify();
 }
-            
 
+
+// Changes #frontBody background color
 function changeBack(classOn, classOff, classOff2) {
     document.getElementById('frontBody').classList.remove(classOff);
     document.getElementById('frontBody').classList.remove(classOff2);
     document.getElementById('frontBody').classList.add(classOn);
 }
-
-
