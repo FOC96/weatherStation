@@ -1,5 +1,6 @@
 // SELECT ALL INFO
 function updateData() {
+    checkTime();
     updateDate();
     obtenerDatos();
     checkTime();

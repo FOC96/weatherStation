@@ -21,7 +21,7 @@ body {
     position: fixed;
     padding: 10px;
     box-sizing: border-box;
-    box-shadow: inset 0px 0px 7px rgba(255,255,255,.15);
+    box-shadow: inset 0px 0px 8px rgba(255,255,255,.20);
     margin: auto;
     top: 0;
     bottom: 0;
@@ -36,12 +36,18 @@ body {
     width: calc(100% - 10px);
     height: calc(100% - 10px);
     position: fixed;
-    top: 5px;
-    left: 5px;
     padding: 10px;
     box-sizing: border-box;
     display: none;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 500px;
+    max-height: 800px;
 }
+
 
 .normalBack {
     background: white;

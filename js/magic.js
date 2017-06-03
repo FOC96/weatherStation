@@ -9,8 +9,6 @@ function checkTime() {
     } else {
         changeBack('night', 'afternoon', 'morning')
     }
-    
-    updateData();
 }
 
 
