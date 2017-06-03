@@ -1,7 +1,7 @@
 // SELECT ALL INFO
 function updateData() {
     updateDate();
-    
+    obtenerDatos();
 }
 
 //Updates day, month, year and time of last update
@@ -51,11 +51,32 @@ function updateDate() {
             break;
         }
     
-    dateInput = document.getElementById('lastUpdate');
+    if (hour>12) {
+        hour = hour-12
+        if (minute < 10) {
+            minute = "0"+minute
+        }
+        minute = minute+" PM"
+    } else {
+        if (minute < 10) {
+            minute = "0"+minute
+        }
+        minute = minute+" AM"
+    }
+    
+    dateInput = document.getElementById('lastUpdate2');
     dateInput.innerHTML = day + " | " + month  + " | " + year  + " | " + hour + ":" + minute;
 }
 
 
-function updateDatabase() {
+function obtenerDatos(){
     //AJAX
+    buscarAjax = new XMLHttpRequest();
+    buscarAjax.open('GET','datos.php', true);
+    buscarAjax.send();
+    buscarAjax.onreadystatechange=function(){
+        if(buscarAjax.readyState==4 && buscarAjax.status==200){
+            document.getElementById('mainInfo').innerHTML = buscarAjax.responseText;
+        }
+    }
 }

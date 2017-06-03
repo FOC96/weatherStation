@@ -9,29 +9,22 @@
         <script src="parallaxify-master/jquery.parallaxify.min.js" type="text/javascript"></script>
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-touch-fullscreen" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="white">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
         <script src="js/db_connection.js" type="text/javascript"></script>
     </head>
     <body onload="checkTime()">
         <div class="normalBack" id="frontBody">
            
-           <h2 id="place">Facultad de Informática</h2>
-           <h3 id="lastUpdate">2 | JUNIO | 2017 | 14:03</h3>
-           
            <div class="centeredText" id="mainInfo">
-               <h1 id="tempC">20ºC</h1>
-               <h3 id="thermalSen">Sensación de bochorno: 28ºC</h3>
-               <h3 id="humidity">Humedad: 52%</h3>
-               <h3 id="lumin">Luminosidad: ??</h3>
+               
            </div>
            
            <img src="media/FIF.png" id="building">
             <div class="underDiv centeredText">
 <!--                <img src="media/update.png" id="reloadBtn" onclick="hola()">-->
-                <p>Fernando Ortiz Rico Celio</p>
-                <p>Diego Pastor Calvo</p>
-                <p>Abraham Wieslaw Porter Mastache</p>
+                <h2 id="place2">Facultad de Informática</h2>
+                <h3 id="lastUpdate2">2 | JUNIO | 2017 | 14:03</h3>
             </div>
         </div>
         
@@ -60,5 +53,5 @@
     //Function called every 2 minutes
     window.setInterval(function(){
       updateData();
-    }, 1000);
+    }, 5000);
 </script>

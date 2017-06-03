@@ -10,6 +10,7 @@ function checkTime() {
         changeBack('night', 'afternoon', 'morning')
     }
     
+    updateData();
 }
 
 
