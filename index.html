@@ -19,6 +19,7 @@
     </head>
     <body onload="updateData()">
         <div class="normalBack" id="frontBody">
+           <img src="media/more.svg" id="btnInfo" onclick="showBack()">
            
            <div class="centeredText" id="mainInfo">
                
@@ -39,16 +40,19 @@
         
         
         
-        <div id="backBody" class="centeredText">
-            <p>Universidad Autónoma de Querétaro</p>
-            <p>Facultad de Informática</p>
-            
-            <p>Fernando Ortiz Rico Celio</p>
-            <p>Diego Pastor Calvo</p>
-            <p>Abraham Wieslaw Porter Mastache</p>
-            
-            <p>Dispositivos Lógicos</p>
-            <p>Dra. Ana Marcela Herrera Navarro</p>
+        <div id="backBody" >
+          <img src="media/back.svg" id="btnBack" onclick="showFront()">
+           <div class="centeredText" id="backInfo">
+                <p>Universidad Autónoma de Querétaro</p>
+                <p>Facultad de Informática</p>
+
+                <p>Fernando Ortiz Rico Celio</p>
+                <p>Diego Pastor Calvo</p>
+                <p>Abraham Wieslaw Porter Mastache</p>
+
+                <p>Dispositivos Lógicos</p>
+                <p>Dra. Ana Marcela Herrera Navarro</p>
+           </div>
         </div>
     </body>
 </html>

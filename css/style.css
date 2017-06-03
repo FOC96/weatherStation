@@ -29,6 +29,7 @@ body {
     right: 0;
     max-width: 500px;
     max-height: 800px;
+    z-index: 10;
 }
 
 #backBody {
@@ -38,7 +39,6 @@ body {
     position: fixed;
     padding: 10px;
     box-sizing: border-box;
-    display: none;
     margin: auto;
     top: 0;
     bottom: 0;
@@ -46,6 +46,8 @@ body {
     right: 0;
     max-width: 500px;
     max-height: 800px;
+    background: white;
+    z-index: 0;
 }
 
 
@@ -210,4 +212,30 @@ h1, h2, h3, #building {
     margin-top: 0px !important;
     font-size: .8em !important;
     font-weight: 500 !important;
+}
+
+#btnInfo {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#btnBack {
+    float: left;
+    height: 25px;
+    width: 14.17px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+#backInfo {
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 300px;
+    width: 300px;
 }

@@ -18,8 +18,8 @@
         <h1 id="tempC"><?php echo $r['temperatura']; ?>ºC</h1>
         <h3 id="tempF"><?php echo $tempF; ?>ºF</h3>
 <!--        <h3 id="thermalSen">Sensación de bochorno: 28ºC</h3>-->
-        <h3 id="humidity">Humedad: <?php echo $r['humedad']; ?></h3>
-        <h3 id="lumin">Luminosidad: <?php echo $r['luminosidad']; ?></h3>
+        <h3 id="humidity">Humedad: <?php echo $r['humedad']; ?>%</h3>
+        <h3 id="lumin">Luminosidad: <?php echo $r['luminosidad']; ?> lx</h3>
         
 <?php        
     }

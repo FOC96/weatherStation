@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>more</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Morning" transform="translate(-274.000000, -22.000000)">
+            <g id="Icons/Top-Bar/Info" transform="translate(274.000000, 22.000000)">
+                <g id="Info-Icon">
+                    <circle id="Circle" stroke="#FFFFFF" cx="12.5" cy="12.5" r="12"></circle>
+                    <path d="M11.3636364,18.1818182 L11.3636364,10.2272727 L10.2272727,10.2272727 L10.2272727,9.09090909 L13.6363636,9.09090909 L13.6363636,9.65909091 L13.6363636,18.1818182 L14.7727273,18.1818182 L14.7727273,19.3181818 L10.2272727,19.3181818 L10.2272727,18.1818182 L11.3636364,18.1818182 Z M12.5,7.95454545 C11.7155046,7.95454545 11.0795455,7.31858629 11.0795455,6.53409091 C11.0795455,5.74959553 11.7155046,5.11363636 12.5,5.11363636 C13.2844954,5.11363636 13.9204545,5.74959553 13.9204545,6.53409091 C13.9204545,7.31858629 13.2844954,7.95454545 12.5,7.95454545 Z" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
