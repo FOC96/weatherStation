@@ -2,6 +2,7 @@
 function updateData() {
     updateDate();
     obtenerDatos();
+    checkTime();
 }
 
 //Updates day, month, year and time of last update
