@@ -20,12 +20,7 @@ function changeBack(classOn, classOff, classOff2) {
 }
 
 
-function showBack() {
-    document.getElementById('frontBody').style.zIndex="0";
-    document.getElementById('backBody').style.zIndex="10";
-}
-
-function showFront() {
-    document.getElementById('frontBody').style.zIndex="10";
-    document.getElementById('backBody').style.zIndex="0";
+// Flip effect on cards
+function flipIt() {
+    $("#card").flip('toggle');
 }

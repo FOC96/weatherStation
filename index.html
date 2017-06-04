@@ -3,58 +3,58 @@
         <title>weatherStation</title>   
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/design.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="js/magic.js"></script>
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="parallaxify-master/jquery.parallaxify.min.js" type="text/javascript"></script>
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-touch-fullscreen" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
         <script src="js/db_connection.js" type="text/javascript"></script>
         <link rel="apple-touch-icon" href="apple-touch-iphone.png" />
         <link rel="apple-touch-icon" sizes="72x72" href="media/iconSmall.png" />
         <link rel="apple-touch-icon" sizes="114x114" href="media/iconMedium.png" />
         <link rel="apple-touch-icon" sizes="144x144" href="media/iconBig.png" />
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.flip.js"></script>
     </head>
     <body onload="updateData()">
-        <div class="normalBack" id="frontBody">
-           <img src="media/more.svg" id="btnInfo" onclick="showBack()">
-           
-           <div class="centeredText" id="mainInfo">
-               
-           </div>
-           
-           <img src="media/FIF.png" id="building">
-            <div class="underDiv centeredText">
-<!--                <img src="media/update.png" id="reloadBtn" onclick="hola()">-->
-                <h2 id="place2">Facultad de Informática</h2>
-                <h3 id="lastUpdate2">2 | JUNIO | 2017 | 14:03</h3>
-            </div>
-        </div>
         
-        
-        
-        
-        
-        
-        
-        
-        <div id="backBody" >
-          <img src="media/back.svg" id="btnBack" onclick="showFront()">
-           <div class="centeredText" id="backInfo">
-                <p>Universidad Autónoma de Querétaro</p>
-                <p>Facultad de Informática</p>
+        <div id="card">
+<!--            FRONT SIDE-->
+            <div class="front night" id="frontBody"> 
+                <img src="media/more.svg" id="btnInfo" onclick="flipIt()">
 
-                <p>Fernando Ortiz Rico Celio</p>
-                <p>Diego Pastor Calvo</p>
-                <p>Abraham Wieslaw Porter Mastache</p>
+               <div class="centeredText centeredDiv" id="mainInfo">
 
-                <p>Dispositivos Lógicos</p>
-                <p>Dra. Ana Marcela Herrera Navarro</p>
-           </div>
+               </div>
+
+               <img src="media/FIF.png" id="building">
+                <div class="underDiv centeredText">
+                    <h2 id="place2">Facultad de Informática</h2>
+                    <h3 id="lastUpdate2">2 | JUNIO | 2017 | 14:03</h3>
+                </div>
+            </div> 
+
+<!--           BACK SIDE-->
+            <div class="back cardBack" id="backBody">
+                <img src="media/back.svg" id="btnBack" onclick="flipIt()">
+                <div class="centeredText centeredDiv" id="backInfo">
+                    <p>Universidad Autónoma de Querétaro</p>
+                    <p>Facultad de Informática</p>
+
+                    <p>Fernando Ortiz Rico Celio</p>
+                    <p>Diego Pastor Calvo</p>
+                    <p>Abraham Wieslaw Porter Mastache</p>
+
+                    <p>Dispositivos Lógicos</p>
+                    <p>Dra. Ana Marcela Herrera Navarro</p>
+                </div>
+            </div> 
+            
+            
         </div>
     </body>
+<script>
+</script>
 </html>
 
 <script>
@@ -62,4 +62,10 @@
     window.setInterval(function(){
       updateData();
     }, 5000);
+    
+    $(function($) {
+        $("#card").flip({
+            trigger: 'manual'
+        }); 
+    });
 </script>

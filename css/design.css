@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Muli', 'Roboto';
+    -webkit-touch-callout: none;
+}
+
+body {
+    background: black;
+}
+
+/* BACKGROUNDS */
+.morning {
+    background-image: -webkit-linear-gradient(#414E9C 0%, #5A9AC7 100%);
+    background-image: -o-linear-gradient(#414E9C 0%, #5A9AC7 100%);
+    background-image: linear-gradient(#414E9C 0%, #5A9AC7 100%);
+}
+
+.afternoon {
+    background-image: -webkit-linear-gradient(#006AB9 0%, #059BB9 100%);
+    background-image: -o-linear-gradient(#006AB9 0%, #059BB9 100%);
+    background-image: linear-gradient(#006AB9 0%, #059BB9 100%);
+}
+
+.night {
+    background-image: -webkit-linear-gradient(#002B4D 0%, #22002F 100%);
+    background-image: -o-linear-gradient(#002B4D 0%, #22002F 100%);
+    background-image: linear-gradient(#002B4D 0%, #22002F 100%);
+}
+
+.cardBack {
+    background: white;
+}
+
+
+/* CARDS */
+#card {
+    width: calc(100% - 25px);
+    height: calc(100% - 25px);
+    max-width: 400px;
+    max-height: 800px;
+    margin: auto !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute!important;
+}
+
+.front, .back {
+    border-radius: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,.15);
+}
+
+
+/* FRONT CARD CONTENT */
+h1, h2, h3, #building {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#btnInfo {
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.centeredText {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.centeredDiv {
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+#building {
+    width: 100%;
+    position: absolute;
+    bottom: 65px;
+    left: 0px;
+}
+
+.underDiv {
+    width: 100%;
+    left: 0px;
+    height: 70px;
+    background: white;
+    border-radius: 0px 0px 12px 12px;
+    position: absolute;
+    bottom: 1px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+#place2 {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #323232;
+    letter-spacing: 0;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: -10px;
+}
+
+#lastUpdate2 {
+    color: #646464 !important;
+    text-shadow: none !important;
+    margin-top: 0px !important;
+    font-size: .8em !important;
+    font-weight: 500 !important;
+}
+
+#frontBody h3 {
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-shadow: 0 0 4px rgba(0,0,0,0.25);
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+#frontBody h3:nth-child(4) {
+    margin-bottom: 40px;
+}
+
+#tempC {
+    font-weight: 700;
+    font-size: 5em;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-shadow: 0 0 4px rgba(0,0,0,0.25);
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+
+/* BACK CARD CONTENT */
+#btnBack {
+    float: left;
+    height: 25px;
+    width: 14.17px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+#backBody p {
+    font-weight: 300;
+    font-size: 15px;
+    color: #4A4A4A;
+    letter-spacing: 0;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#backBody p:nth-child(3), p:nth-child(6) {
+    margin-top: 30px;
+}
