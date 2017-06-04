@@ -1,6 +1,7 @@
 <?php
 //CONEXIÓN
-    $con = mysqli_connect('189.166.63.3', 'Remote', 'maplew', 'weatherstation');
+    //$con = mysqli_connect('189.166.63.3', 'Remote', 'maplew', 'weatherstation');
+    $con = mysqli_connect('localhost', 'Remote', 'maplew', 'weatherstation');
     if (!$con) {
       echo "No se pudo llevar a cabo la conexión.";
     }
