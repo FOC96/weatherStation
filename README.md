@@ -17,6 +17,6 @@ To execute it, you should open the index.html file from your localhost.
 * Abraham Wieslaw Porter Mastache
 
 ## Acknowledgements
-Arduino
-Raspberry Pi
-jQuery Flip [https://github.com/nnattawat/flip]
+* Arduino
+* Raspberry Pi
+* jQuery Flip [https://github.com/nnattawat/flip]
